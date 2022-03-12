@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 //CSS
 import "./Home.css";
 //Icons
-import AppsIcon from "@material-ui/icons/Apps";
+import AppsIcon from "@mui/icons-material/Apps";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 
 function Home() {
   return (
@@ -17,7 +18,7 @@ function Home() {
           <Link to="/gmail">Gmail</Link>
           <Link to="/images">Images</Link>
           <AppsIcon />
-          {/* Avatar */}
+          <AccountCircleIcon />
         </div>
       </div>
       <div className="home__body"></div>
