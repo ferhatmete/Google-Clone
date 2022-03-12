@@ -1,1 +1,30 @@
-/* No CSS *//*# sourceMappingURL=Search.css.map */
+.search__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid lightgray;
+  height: 30px;
+  padding: 10px 20px;
+  border-radius: 999px;
+  width: 75vw;
+  margin: 0 auto;
+  margin-top: 40px;
+  max-width: 560px;
+}
+
+.search__input input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 10px 20px;
+  font-size: medium;
+  border: none;
+}
+
+.search__input input:focus {
+  outline: none;
+}
+/*# sourceMappingURL=Search.css.map */
