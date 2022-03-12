@@ -3,15 +3,14 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 // Pages
 import Home from "./pages/Home";
+import SearchPage from "./pages/SearchPage";
 
 function App() {
   return (
     //BEM
     <div className="App">
-      <h1>Hello World</h1>
-      {/* Home */}
+      <SearchPage />
       <Home />
-      {/* Search Page (result page) */}
     </div>
   );
 }
