@@ -27,4 +27,8 @@
 .search__input input:focus {
   outline: none;
 }
+
+.search__input .search__inputIcon {
+  color: gray;
+}
 /*# sourceMappingURL=Search.css.map */
