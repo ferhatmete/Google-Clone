@@ -9,8 +9,12 @@ function App() {
   return (
     //BEM
     <div className="App">
-      <SearchPage />
-      <Home />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/search" element={<SearchPage />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
