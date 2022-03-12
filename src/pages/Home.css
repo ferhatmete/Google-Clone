@@ -65,8 +65,8 @@
 }
 
 .home .home__body img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   height: 100px;
 }
 /*# sourceMappingURL=Home.css.map */
