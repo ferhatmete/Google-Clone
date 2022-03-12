@@ -6,7 +6,6 @@ import "./Home.css";
 function Home() {
   return (
     <div className="home">
-      <h1>This is homepage</h1>
       <div className="home__header">
         <div className="home__headerLeft">
           <Link to="/about">About</Link>
