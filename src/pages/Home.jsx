@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 //CSS
 import "./Home.css";
 
@@ -8,13 +9,12 @@ function Home() {
       <h1>This is homepage</h1>
       <div className="home__header">
         <div className="home__headerLeft">
-          {/* Link */}
-          {/* Link */}
+          <Link to="/about">About</Link>
+          <Link to="/store">Store</Link>
         </div>
         <div className="home__headerRight">
-          {/* Link */}
-          {/* Link */}
-          {/* Icon */}
+          <Link to="/gmail">Gmail</Link>
+          <Link to="/images">Images</Link>
           {/* Avatar */}
         </div>
       </div>
