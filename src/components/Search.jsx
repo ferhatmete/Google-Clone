@@ -27,7 +27,7 @@ function Search({ hideButtons = false }) {
         <Button type="submit" onClick={search} variant="outline">
           Google Search
         </Button>
-        <Button variant="outlined">I'm Feeling Lucky</Button>
+        <Button>I'm Feeling Lucky</Button>
       </div>
     </form>
   );
