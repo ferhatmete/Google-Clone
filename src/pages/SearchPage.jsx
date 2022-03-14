@@ -23,7 +23,7 @@ function SearchPage() {
   return (
     <div className="searchPage">
       <div className="searchPage__header">
-        <Link>
+        <Link to="/">
           <img
             className="searchPage__logo"
             src="	https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png"
@@ -31,7 +31,7 @@ function SearchPage() {
           />
         </Link>
         <div className="searchPage__headerBody">
-          <Search hideButtons />
+          <Search />
         </div>
       </div>
       <div className="searchPage__results"></div>
