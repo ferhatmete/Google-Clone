@@ -6,6 +6,8 @@ import Response from "../response";
 import { useStateValue } from "../StateProvider";
 // Hooks
 // import useGoogleSearch from "../useGoogleSearch";
+// Components
+import Search from "../components/Search";
 // CSS
 import "./SearchPage.css";
 
@@ -28,6 +30,9 @@ function SearchPage() {
             alt="Google"
           />
         </Link>
+        <div className="searchPage__headerBody">
+          <Search hideButtons />
+        </div>
       </div>
       <div className="searchPage__results"></div>
     </div>
