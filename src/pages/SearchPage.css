@@ -1,1 +1,7 @@
-/* No CSS *//*# sourceMappingURL=SearchPage.css.map */
+.searchPage__logo {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 50px;
+  margin-right: 50px;
+}
+/*# sourceMappingURL=SearchPage.css.map */
