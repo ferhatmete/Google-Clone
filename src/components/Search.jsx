@@ -23,12 +23,26 @@ function Search({ hideButtons = false }) {
         <input value={input} onChange={(e) => setInput(e.target.value)} />
         <MicIcon />
       </div>
-      <div className="search__buttons">
-        <Button type="submit" onClick={search} variant="outline">
-          Google Search
-        </Button>
-        <Button>I'm Feeling Lucky</Button>
-      </div>
+      {hideButtons ? (
+        <div className="search__buttons">
+          <Button type="submit" onClick={search} variant="outline">
+            Google Search
+          </Button>
+          <Button>I'm Feeling Lucky</Button>
+        </div>
+      ) : (
+        <div className="search__buttons">
+          <Button
+            className="search__buttonsHidden"
+            type="submit"
+            onClick={search}
+            variant="outline"
+          >
+            Google Search
+          </Button>
+          <Button className="search__buttonsHidden">I'm Feeling Lucky</Button>
+        </div>
+      )}
     </form>
   );
 }
