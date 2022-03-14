@@ -1,20 +1,33 @@
 import React from "react";
+import { Link } from "react-router-dom";
+// Data
+import Response from "../response";
 // Context API
 import { useStateValue } from "../StateProvider";
 // Hooks
-import useGoogleSearch from "../useGoogleSearch";
+// import useGoogleSearch from "../useGoogleSearch";
 // CSS
 import "./SearchPage.css";
 
 function SearchPage() {
   const [{ term }, dispatch] = useStateValue();
-  const { data } = useGoogleSearch(term);
+
+  // Live apı
+  // const { data } = useGoogleSearch(term);
+
+  const data = Response;
 
   console.log(data);
   return (
     <div className="searchPage">
       <div className="searchPage__header">
-        <h1>{term}</h1>
+        <Link>
+          <img
+            className="searchPage__logo"
+            src="	https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png"
+            alt="Google"
+          />
+        </Link>
       </div>
       <div className="searchPage__results"></div>
     </div>
