@@ -13,8 +13,8 @@ function Search({ hideButtons = false }) {
 
   const search = (e) => {
     e.preventDefault();
-
-    history.push(`/search`);
+    console.log(input);
+    history("/search");
   };
   return (
     <form className="search">
