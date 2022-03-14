@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+// Context API
+import { useStateValue } from "../StateProvider";
+import { actionTypes } from "../reducer";
 //CSS
 import "./Search.css";
 //Icons
@@ -8,12 +11,20 @@ import MicIcon from "@mui/icons-material/Mic";
 import { Button } from "@mui/material";
 
 function Search({ hideButtons = false }) {
+  const [{ term }, dispatch] = useStateValue();
+
   const [input, setInput] = useState("");
   const history = useNavigate();
 
   const search = (e) => {
     e.preventDefault();
     console.log(input);
+
+    dispatch({
+      type: actionTypes.SET_SEARCH_TERM,
+      term: input,
+    });
+
     history("/search");
   };
   return (
