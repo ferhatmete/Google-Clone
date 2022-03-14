@@ -25,9 +25,6 @@ function SearchPage() {
   // Live apı
   const { data } = useGoogleSearch(term);
 
-  // const data = Response;
-
-  console.log(data);
   return (
     <div className="searchPage">
       <div className="searchPage__header">
@@ -39,7 +36,7 @@ function SearchPage() {
           />
         </Link>
         <div className="searchPage__headerBody">
-          <Search />
+          <Search hideButtons={false} />
           <div className="searchPage__options">
             <div className="searchPage__optionsLeft">
               <div className="searchPage__option">
