@@ -11,10 +11,26 @@
         object-fit: contain
         height: 50px
         margin-right: 50px
-    .searchPage__headerBody
-        .search
-            .search__input
-                margin-top: 0
-                width: unset
-                margin: unset
-                max-width: unset
+    .searchPage__headerBody > .search > .search__input
+        margin-top: 0
+        width: unset
+        margin: unset
+        max-width: unset
+    .searchPage__options a, .searchPage__optionsRight a
+        text-decoration: none
+        color: gray
+    .searchPage__options
+        display: flex
+        flex-direction: row
+        align-items: center
+        color: grey
+        .searchPage__optionsRight
+            margin-left: 80px
+        .searchPage__optionsRight, .searchPage__optionsLeft
+            display: flex
+        .searchPage__option a
+            margin-left: 5px
+        .searchPage__option
+            display: flex
+            align-items: center
+            margin-right: 20px
