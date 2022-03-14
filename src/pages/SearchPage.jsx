@@ -1,12 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// Data
-// import Response from "../response";
-import useGoogleSearch from "../useGoogleSearch";
 // Context API
 import { useStateValue } from "../StateProvider";
-// Hooks
-// import useGoogleSearch from "../useGoogleSearch";
+// Hooks & Data
+import useGoogleSearch from "../useGoogleSearch";
 // Components
 import Search from "../components/Search";
 // CSS
