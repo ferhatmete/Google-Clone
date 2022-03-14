@@ -23,8 +23,8 @@
 
 .searchPage__header .searchPage__headerBody > .search > .search__input {
   margin-top: 0;
-  width: unset;
   margin: unset;
+  width: unset;
   max-width: 711px;
 }
 
@@ -75,6 +75,7 @@
   max-width: 650px;
   margin-top: 0px;
   margin-left: 240px;
+  margin-right: 28px;
   margin-bottom: 100px;
 }
 
@@ -104,9 +105,32 @@
   margin-top: -20px;
 }
 
-@media (max-width: 890px) {
+@media (max-width: 1011px) {
   .searchPage__results {
     margin-left: 35px;
+  }
+}
+
+@media (max-width: 1011px) {
+  .searchPage__headerBody > .search {
+    width: 510px;
+  }
+  .searchPage__options {
+    position: absolute;
+    margin-bottom: 15px;
+    left: 35px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .searchPage__headerBody > .search {
+    width: 420px;
+  }
+  .searchPage__optionsRight {
+    position: absolute;
+    right: -18vw;
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=SearchPage.css.map */
