@@ -10,7 +10,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import MicIcon from "@mui/icons-material/Mic";
 import { Button } from "@mui/material";
 
-function Search({ hideButtons = false }) {
+function Search({ hideButtons = true }) {
   const [{ term }, dispatch] = useStateValue();
 
   const [input, setInput] = useState("");
