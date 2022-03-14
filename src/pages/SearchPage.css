@@ -70,4 +70,37 @@
           align-items: center;
   margin-right: 20px;
 }
+
+.searchPage__results {
+  max-width: 650px;
+  margin-top: 0px;
+  margin-left: 240px;
+  margin-bottom: 100px;
+}
+
+.searchPage__results .searchPage__resultCount {
+  color: #70757a;
+  font-size: 14px;
+}
+
+.searchPage__results .searchPage__result {
+  margin: 40px 0;
+}
+
+.searchPage__results .searchPage__result .searchPage__resultTitle > h2 {
+  margin-top: 5px;
+  font-weight: 500;
+}
+
+.searchPage__results .searchPage__result .searchPage__resultTitle {
+  text-decoration: none;
+}
+
+.searchPage__results .searchPage__result .searchPage__resultTitle:hover {
+  text-decoration: underline;
+}
+
+.searchPage__results .searchPage__result .searchPage__resultSnippet {
+  margin-top: -20px;
+}
 /*# sourceMappingURL=SearchPage.css.map */
