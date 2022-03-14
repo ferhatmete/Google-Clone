@@ -25,7 +25,7 @@
   margin-top: 0;
   width: unset;
   margin: unset;
-  max-width: unset;
+  max-width: 711px;
 }
 
 .searchPage__header .searchPage__options a, .searchPage__header .searchPage__optionsRight a {
@@ -102,5 +102,11 @@
 
 .searchPage__results .searchPage__result .searchPage__resultSnippet {
   margin-top: -20px;
+}
+
+@media (max-width: 890px) {
+  .searchPage__results {
+    margin-left: 35px;
+  }
 }
 /*# sourceMappingURL=SearchPage.css.map */
