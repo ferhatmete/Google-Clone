@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 // Data
-import Response from "../response";
+// import Response from "../response";
+import useGoogleSearch from "../useGoogleSearch";
 // Context API
 import { useStateValue } from "../StateProvider";
 // Hooks
@@ -22,9 +23,9 @@ function SearchPage() {
   const [{ term }, dispatch] = useStateValue();
 
   // Live apı
-  // const { data } = useGoogleSearch(term);
+  const { data } = useGoogleSearch(term);
 
-  const data = Response;
+  // const data = Response;
 
   console.log(data);
   return (
@@ -77,7 +78,23 @@ function SearchPage() {
           </div>
         </div>
       </div>
-      <div className="searchPage__results"></div>
+      {term && (
+        <div className="searchPage__results">
+          <p className="searchPage__resultCount">
+            About {data?.searchInformation.formattedTotalResults} results (
+            {data?.searchInformation.formattedSearchTime} seconds) for {term}
+          </p>
+          {data?.items.map((item) => (
+            <div className="searchPage__result">
+              <a href={item.link}>{item.displayLink}</a>
+              <a className="searchPage__resultTitle" href={item.link}>
+                <h2>{item.title}</h2>
+              </a>
+              <p className="searchPage__resultSnippet">{item.snippet}</p>
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
