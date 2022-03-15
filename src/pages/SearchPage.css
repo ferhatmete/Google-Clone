@@ -133,4 +133,11 @@
     font-size: 14px;
   }
 }
+
+@media (max-width: 668px) {
+  .searchPage__optionsRight {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
 /*# sourceMappingURL=SearchPage.css.map */
